@@ -1,0 +1,107 @@
+.container {
+    width: 250px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    background-color: #FFF;
+    margin: 0 10px 50px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.container:hover {
+    box-shadow: rgba(0,0,0,0.09) 0px 2px 1px ,rgba(0,0,0,0.09) 0px 4px 2px,
+    rgba(0,0,0,0.09) 0px 8px 4px,rgba(0,0,0,0.09) 0px 16px 8px ,
+    rgba(0,0,0,0.09) 0px 32px 16px
+    ;
+}
+.cardimage {
+    width: 230px;
+    height: 200px;
+    margin: 10px;
+}
+.container h3 {
+    color: #404040;
+    text-align: left;
+    font-size: 1.1rem;
+    margin: 25px 20px 15px;
+}
+.container p {
+    color: #404040;
+    font-size: 0.9rem;
+    text-align: left;
+    margin: 15px 20px;
+    font-weight: 600;
+}
+.linkcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 20px 20px;
+}
+.linkcontainer a {
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 700;
+}
+.buttoncontainer button {
+    font-size: 0.9rem;
+    background-color: #1a73e8;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 5px;
+    box-shadow: rgba(50,50,93,0.25) 0px 4px 12px -2px ,
+    rgba(0,0,0,0.3) 0px 3px 7px -3px;
+}
+.smallbutton {
+    width: 30px !important ; 
+    height: 30px !important;
+    font-weight: bolder;
+    line-height: 30px;
+    
+}
+.smallbutton img {
+    width: 40px;
+}
+.counter {
+    color: #1a73e8;
+    display: inline-block;
+    width: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 5px;
+}
+@media (max-width: 1015px) {
+    .container {
+        width: 45%;
+        
+    }
+}
+@media (max-width: 768px) {
+    .container {
+       width: 45%;
+    }
+    .cardimage {
+        width: 200px;
+    }
+    
+}
+@media (max-width: 555px) {
+    .container {
+        width: 70%;
+    }
+    .cardimage {
+        width: 230px;
+    }
+   
+}
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
